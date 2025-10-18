@@ -4,13 +4,10 @@
 
        class Saiyajin{
 
-        public  $nombre;
-        public $nivel_pelea;
+        
+  
 
-        public function __construct($nombre,$nivel_pelea){
-        $this->nombre=$nombre;
-        $this->nivel_pelea=$nivel_pelea;
-            
+        public function __construct(public string $nombre,public int $nivel_pelea){               
 
         }
 
