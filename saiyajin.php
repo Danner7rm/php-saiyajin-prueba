@@ -4,8 +4,8 @@
 
        class Saiyajin{
 
-        public string $nombre="Goku";
-        public int $nivel_pelea=1000;
+        public  $nombre;
+        public $nivel_pelea;
 
         public function __construct($nombre,$nivel_pelea){
         $this->nombre=$nombre;
