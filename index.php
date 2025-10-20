@@ -18,4 +18,4 @@ echo "<br><br>";
 $gohan = new Supersaiyajin(nivel_pelea: 1700, nombre: "gohan");
 echo $gohan->nombre;
 echo "<br><br>";
-
+echo "<br><br>";
