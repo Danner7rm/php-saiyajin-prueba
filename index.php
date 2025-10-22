@@ -6,12 +6,12 @@ require_once "Supersaiyajin.php";
 
 
 $goku = new Saiyajin(nivel_pelea: 1000, nombre: "goku");
-echo $goku->NivelDePelea();
+echo $goku->MostrarColorCabello();
 
 echo "<br><br>";
 
 $vegeta = new Saiyajin(nivel_pelea: 950, nombre: "Vegeta");
-echo $vegeta->NivelDePelea();
+echo $vegeta->MostrarColorCabello();
 
 echo "<br><br>";
 

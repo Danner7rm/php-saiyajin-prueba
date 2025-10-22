@@ -4,6 +4,7 @@ class Supersaiyajin extends Saiyajin    //CALSE EREDADA POR ISTANCIA
 {
 
     public string $clase = "SuperSaiyajin";       //METODO
+    public static $cabello = "amarillo";
 
     public function transformacion(){   //METODO
 
@@ -14,6 +15,9 @@ class Supersaiyajin extends Saiyajin    //CALSE EREDADA POR ISTANCIA
         }
         return $texto;
     }
-
+ public static function MostrarColorCabello() {
+    // Retorna (devuelve) el texto, no lo imprime directamente
+    return "Tengo el cabello de color ".self::$cabello;
+  }
    
 }

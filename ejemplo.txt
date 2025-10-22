@@ -1,0 +1,8 @@
+| Tipo                | Ejemplo en el código                            | Explicación                                |
+| ------------------- | ----------------------------------------------- | ------------------------------------------ |
+| **Clase**           | `class Saiyajin { ... }`                        | Molde que define cómo será el Saiyajin     |
+| **Atributo**        | `$nombre`, `$nivel_pelea`, `$clase`, `$cabello` | Guardan datos del Saiyajin                 |
+| **Método**          | `Saludar()`, `NivelDePelea()`, `getNombre()`    | Acciones que puede hacer el Saiyajin       |
+| **Método estático** | `MostrarCabello()`                              | Acción que pertenece a toda la clase       |
+| **Parámetro**       | `($nombre, $nivel_pelea)` o `($text)`           | Valores que entran desde fuera de la clase |
+| **Objeto**          | `$goku = new Saiyajin("Goku", 9000);`           | Instancia (un Saiyajin real con datos)     |
