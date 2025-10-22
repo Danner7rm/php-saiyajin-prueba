@@ -1,17 +1,16 @@
 <?php
 
-class Supersaiyajin extends Saiyajin
+class Supersaiyajin extends Saiyajin    //CALSE EREDADA POR ISTANCIA 
 {
 
-    public string $clase = "SuperSaiyajin";
+    public string $clase = "SuperSaiyajin";       //METODO
 
-    public function transformacion()
-    {
+    public function transformacion(){   //METODO
 
-        if ($this->nivel_pelea >= 1500) {
-            $texto = $this->nombre . " se transformo en " . $this->clase;
+        if ($this->getNivelPelea() >= 1500) {      
+            $texto = $this->getNombre() . " se transformo en " . $this->clase;      // ATRIBUTO
         } else {
-            $texto = $this->nombre . " No se transformo en " . $this->clase;
+            $texto = $this->getNombre() . " No se transformo en " . $this->clase;  // ATRIBUTO
         }
         return $texto;
     }

@@ -16,6 +16,14 @@ echo $vegeta->NivelDePelea();
 echo "<br><br>";
 
 $gohan = new Supersaiyajin(nivel_pelea: 1700, nombre: "gohan");
-echo $gohan->nombre;
+echo $gohan->transformacion();
+echo $gohan->getNombre(); // llamamos el nombre 
+echo "<br>";
+$gohan->setNombre("El gran saiyaman");  //Modificamos el nombre
+echo $gohan->getNombre();
 echo "<br><br>";
-echo "<br><br>";
+
+echo $gohan->getNivelPelea();
+$gohan->setNivelPelea(2000);
+echo "<br>";
+echo $gohan->getNivelPelea();
