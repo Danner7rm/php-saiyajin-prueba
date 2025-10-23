@@ -1,46 +1,71 @@
 <?php
 
-//se creo un atributo por medio de unac
-
-class Saiyajin       // CALSES
+// 🔹 Definición de la CLASE (molde o plantilla para crear objetos)
+class Saiyajin
 {
-  private string $nombre;  //  metodo
-  private int $nivel_pelea;   //  metodo (private int)  atributo ($nivel_pelea)
-  public string $clase = "Saiyajin";   //  metodo
+  // 🔸 ATRIBUTOS o PROPIEDADES → definen las características del objeto
 
-
-  public function __construct($nombre, $nivel_pelea) {  // parametro ($nombre, $nivel_pelea)
-    $this->nombre = $nombre;  // propiedad
-    $this->nivel_pelea = $nivel_pelea;
+  private string $nombre;        // Atributo privado: almacena el nombre del Saiyajin
+  private int $nivel_pelea;      // Atributo privado: guarda su nivel de pelea
+  public string $clase = "Saiyajin";  // Atributo público: clase a la que pertenece
+  public static $cabello = "negro";   // Atributo estático: propiedad compartida por todos los Saiyajin
+  const VELOCIDAD="Normal";
+  // 🔹 CONSTRUCTOR → método especial que se ejecuta al crear un objeto
+  // ($nombre, $nivel_pelea) → son PARÁMETROS que reciben valores al instanciar el objeto
+  public function __construct($nombre, $nivel_pelea) {
+    $this->nombre = $nombre;          // $this->nombre → atributo del objeto, se le asigna el valor del parámetro $nombre
+    $this->nivel_pelea = $nivel_pelea; // $this->nivel_pelea → atributo del objeto, se le asigna el valor del parámetro $nivel_pelea
   }
 
-  public function Saludar($text=" Hola soy ")  {
+  // Se define un método estático dentro de una clase
+  public static function MostrarColorCabello() {
+    // Retorna (devuelve) el texto, no lo imprime directamente
+    return "Tengo el cabello de color ".self::$cabello;
+  }
+  // 🔹 MÉTODO NORMAL → define una acción que puede ejecutar el objeto
+  // ($text) → PARÁMETRO que recibe un texto opcional (valor por defecto "Hola, soy ")
+  public function Saludar($text = "Hola, soy ")  {
+    // echo → imprime el mensaje concatenando el texto recibido con el atributo $nombre del objeto
     echo $text . $this->nombre;
   }
 
+  // 🔹 MÉTODO NORMAL → devuelve un texto con el nivel de pelea del Saiyajin
   public function NivelDePelea()  {
-    return $this->nombre . " tiene un nivel de pelea de " . $this->nivel_pelea . " y pertenece a la clase " . $this->clase;
+    // Usa los atributos del objeto ($this->nombre, $this->nivel_pelea, $this->clase)
+    // para formar una frase con su información
+    return $this->nombre . " tiene un nivel de pelea de " . 
+           $this->nivel_pelea . " y pertenece a la clase " . $this->clase;
   }
 
-
-  public function getNombre(){       // el get me permite hacer llamados a extancias cundo la clase es privada
-  return $this->nombre;   //propiedad
+  // 🔹 MÉTODO GET → permite acceder al valor de un atributo privado ($nombre)
+  public function getNombre() {
+    // Retorna el valor del atributo privado $nombre
+    return $this->nombre;
   }
 
-
-  public function setNombre($nombre){       // el get me permite hacer llamados a extancias cundo la clase es privada,  get recibe lo que es un parametro($nombre)
-      $this->nombre=$nombre;   //propiedad (return $this->) retorna lo que llama el paramtro
+  // 🔹 MÉTODO SET → permite modificar el valor de un atributo privado ($nombre)
+  // ($nombre) → PARÁMETRO que recibe un nuevo nombre
+  public function setNombre($nombre) {
+    // Asigna el valor recibido por el parámetro al atributo del objeto
+    $this->nombre = $nombre;
   }
 
-  public function getNivelPelea(){   //
+  // 🔹 MÉTODO GET → permite acceder al atributo privado $nivel_pelea
+  public function getNivelPelea() {
+    // Retorna el valor actual del atributo $nivel_pelea
     return $this->nivel_pelea;
   }
 
-  public function setNivelPelea($nivel_pelea){   //
-    $this->nivel_pelea=$nivel_pelea;
+  // 🔹 MÉTODO SET → permite modificar el atributo privado $nivel_pelea
+  // ($nivel_pelea) → PARÁMETRO que recibe un nuevo valor
+  public function setNivelPelea($nivel_pelea) {
+    // Asigna el valor del parámetro al atributo $nivel_pelea
+    $this->nivel_pelea = $nivel_pelea;
   }
-
 }
+
+
+
 
 
 
