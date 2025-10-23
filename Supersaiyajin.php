@@ -20,4 +20,7 @@ class Supersaiyajin extends Saiyajin    //CALSE EREDADA POR ISTANCIA
     return "Tengo el cabello de color ".self::$cabello;
   }
    
+  public static function NuevoMetodo(){
+    return  parent::MostrarColorCabello();                            //parent:: me permite acceder a una constante o aun metodo statio del padre que es saiyajin
+  }
 }

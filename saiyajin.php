@@ -10,6 +10,10 @@ class Saiyajin
   public string $clase = "Saiyajin";  // Atributo público: clase a la que pertenece
   public static $cabello = "negro";   // Atributo estático: propiedad compartida por todos los Saiyajin
 
+
+
+  const VELOCIDAD="Normal";
+
   // 🔹 CONSTRUCTOR → método especial que se ejecuta al crear un objeto
   // ($nombre, $nivel_pelea) → son PARÁMETROS que reciben valores al instanciar el objeto
   public function __construct($nombre, $nivel_pelea) {
