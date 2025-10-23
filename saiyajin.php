@@ -5,6 +5,8 @@ class Saiyajin
 {
   // 🔸 ATRIBUTOS o PROPIEDADES → definen las características del objeto
 
+  use TecnicasEspeciales;
+
   private string $nombre;        // Atributo privado: almacena el nombre del Saiyajin
   private int $nivel_pelea;      // Atributo privado: guarda su nivel de pelea
   public string $clase = "Saiyajin";  // Atributo público: clase a la que pertenece
@@ -49,13 +51,13 @@ class Saiyajin
 
   // 🔹 MÉTODO SET → permite modificar el valor de un atributo privado ($nombre)
   // ($nombre) → PARÁMETRO que recibe un nuevo nombre
-  public function setNombre($nombre) {
+  public function AumentarKi() {
     // Asigna el valor recibido por el parámetro al atributo del objeto
-    $this->nombre = $nombre;
+    $this->nombre;
   }
 
   // 🔹 MÉTODO GET → permite acceder al atributo privado $nivel_pelea
-  public function getNivelPelea() {
+  public function AumentarVelocidad() {
     // Retorna el valor actual del atributo $nivel_pelea
     return $this->nivel_pelea;
   }

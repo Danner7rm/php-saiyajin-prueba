@@ -1,12 +1,12 @@
 <?php
 
-
+require_once "traits/tecnicasEspeciales.php";
+require_once "traits/tecnicasSimples.php";
 require_once "saiyajin.php";
 require_once "Supersaiyajin.php";
 
-
 $goku = new Saiyajin(nivel_pelea: 1000, nombre: "goku");
-echo $goku->MostrarColorCabello();
+echo $goku->AumentarVelocidad();
 
 echo "<br><br>";
 
@@ -15,6 +15,5 @@ echo $vegeta->MostrarColorCabello();
 
 echo "<br><br>";
 
-$gohan = new Supersaiyajin(nivel_pelea: 1700, nombre: "gohan");
-echo $gohan->NuevoMetodo();
-
+$gohan = new Supersaiyajin(nivel_pelea: 1700, nombre: " gohan ");
+echo $gohan->AumentarKi();
