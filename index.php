@@ -20,3 +20,5 @@ echo "<br><br>";
 
 $gohan = new Saiyajin(nivel_pelea: 1000, nombre: "goku");
 echo $gohan->UsarKamehameha();
+
+

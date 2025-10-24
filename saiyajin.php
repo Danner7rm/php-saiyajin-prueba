@@ -78,6 +78,7 @@ class Saiyajin
 
 
   public function getAumentarKi()
+  
   {
     // Retorna el valor actual del atributo $nivel_pelea
     return $this->nivel_pelea;
