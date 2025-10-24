@@ -1,14 +1,11 @@
-<?PHP
+<?php
 
-trait TecnicasEspeciales
+trait tecnicasEspeciales
 {
-
-    public function UsarKameHameHa()
+    public function UsarKamehameha()
     {
-
-        return $this->getNombre() . " uso el Kame Hame Ha ";
+        return  $this->getNombre() . " uso el Kamehameha ";
     }
-
-
-  
 }
+
+

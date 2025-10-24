@@ -1,6 +1,6 @@
 <?php
 
-class Supersaiyajin extends Saiyajin    //CALSE EREDADA POR ISTANCIA 
+class SuperSaiyajin extends Saiyajin    //CALSE EREDADA POR ISTANCIA 
 {
 
     public string $clase = "SuperSaiyajin";       //METODO

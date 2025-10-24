@@ -1,17 +1,23 @@
 <?php
 
-trait TecnicasSimples
+trait tecnicasSimples
 {
+    
 
     public function AumentarVelocidad()
     {
-
-        return $this->getNombre() . " aumento su velocidad ";
+        return  $this->getNombre() . " aumento su velocidad ";
     }
 
 
     public function AumentarKi()
     {
-        return $this->getNombre() . "aumento su KI " . $this->getNivelPelea();
+        return  $this->getNombre() . " aumento su KI " . $this->getNivelPelea();
     }
+
+
+
 }
+
+
+//$this->getNombre().
