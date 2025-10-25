@@ -10,6 +10,7 @@ trait tecnicasSimples
     }
 
 
+    
     public function AumentarKi()
     {
         return  $this->getNombre() . " aumento su KI " . $this->getNivelPelea();

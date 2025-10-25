@@ -6,9 +6,9 @@ class Saiyajin
   // 🔸 ATRIBUTOS o PROPIEDADES → definen las características del objeto
 
 
-  use tecnicasSimples, tecnicasEspeciales;
+  use tecnicasCombinadas;
 
-   
+
   private string $nombre;        // Atributo privado: almacena el nombre del Saiyajin
   private int $nivel_pelea;      // Atributo privado: guarda su nivel de pelea
   public string $clase = "Saiyajin";  // Atributo público: clase a la que pertenece
@@ -78,7 +78,7 @@ class Saiyajin
 
 
   public function getAumentarKi()
-  
+
   {
     // Retorna el valor actual del atributo $nivel_pelea
     return $this->nivel_pelea;
