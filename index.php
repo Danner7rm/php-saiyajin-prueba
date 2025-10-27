@@ -2,14 +2,24 @@
 
 
 
-require_once "traits/tecnicasSimples.php";
-require_once "traits/tecnicasEspeciales.php";
-require_once "traits/tecnicasCombinadas.php";
-require_once "saiyajin.php";
-require_once "Supersaiyajin.php";
+require_once "App/Traits/tecnicasSimples.php";
+require_once "App/Traits/tecnicasEspeciales.php";
+require_once "App/Traits/tecnicasCombinadas.php";
+require_once "App/Clases/Saiyajin.php";
+require_once "App/Clases/Supersaiyajin.php";
+require_once "App/Otras/Saiyajin.php";
 
-$goku = new Saiyajin(nivel_pelea: 1000, nombre: "goku");
-echo $goku->UsarKamehameha();
+use App\Clases\Saiyajin;
+use App\Clases\SUperSaiyajin;
+use App\Otras\Saiyajin as OtroSaiyajin;
+
+$goku = new OtroSaiyajin(nivel_pelea: 1000, nombre: "goku");
+echo $goku->Saludar();
+
+echo "<br><br>";
+
+$goten = new Saiyajin(nivel_pelea: 950, nombre: "goten");
+echo $goten->Saludar();
 
 echo "<br><br>";
 
@@ -19,5 +29,6 @@ echo $vegeta->MostrarColorCabello();
 echo "<br><br>";
 
 
-$gohan = new Saiyajin(nivel_pelea: 1500, nombre: "gohan");
+
+$gohan = new App\Clases\Saiyajin(nivel_pelea: 1500, nombre: "gohan");
 echo $gohan->UsarKamehameha();

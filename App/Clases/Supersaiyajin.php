@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Clases;
+
 class SuperSaiyajin extends Saiyajin    //CALSE EREDADA POR ISTANCIA 
 {
 

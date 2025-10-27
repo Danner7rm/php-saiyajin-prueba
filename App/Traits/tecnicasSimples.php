@@ -1,5 +1,5 @@
 <?php
-
+namespace App\Traits;
 trait tecnicasSimples
 {
     

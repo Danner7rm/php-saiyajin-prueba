@@ -1,12 +1,11 @@
 <?php
-
+namespace App\Clases;
 // 🔹 Definición de la CLASE (molde o plantilla para crear objetos)
 class Saiyajin
 {
+
   // 🔸 ATRIBUTOS o PROPIEDADES → definen las características del objeto
-
-
-  use tecnicasCombinadas;
+  use \App\Traits\tecnicasCombinadas;
 
 
   private string $nombre;        // Atributo privado: almacena el nombre del Saiyajin
